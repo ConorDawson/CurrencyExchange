@@ -1,0 +1,98 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+
+     background-image: url('Images/website-background.jfif');
+        /* Other background properties like size and position */
+        background-size: cover;
+        background-attachment: fixed; /* Optional, for a fixed background */
+}
+
+/* Center the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the form panel */
+.panel, .currency-exchange {
+    background-color: #7A5E46;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Style the panel title */
+.panel-heading {
+    background-color: #5E7C36;
+    color: #eff6ee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px; /* Add margin to create space */
+}
+
+/* Style the form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.fName,
+.lName,
+.email,
+.mobile,
+.password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.register, .login{
+    background-color: #B7410E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Style small text */
+.small-text {
+    font-size: 80%;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.reg-link {
+    padding: 5px 10px; /* Add padding */
+}
+
+.reg-link a {
+    color: #273043;
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s; /* Smooth color transition on hover */
+
+}
+
+/* Change link color on hover */
+.reg-link a:hover {
+    color: orange;
+}
