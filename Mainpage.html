@@ -5,38 +5,62 @@
   <title>Currency App Home</title>
 </head>
 <body>
+<div class="banner">
+  <h1>CurrencyHub</h1>
+
+  <nav><a href="Mainpage.html">Home</a>  <a href="Account.html">Account</a> <a href="About.html">About us</a>  <a href="Login.html">Logout</a></nav>
+</div>
+
 <div class="container">
   <div class="panel">
     <div class="panel-heading">
-      <h3 class="panel-title">Currency App</h3>
-    </div>
+    <h1 class="panel-title">Wallet</h1>
+  </div>
+    <h1>Welcome Username</h1>
+
+
     <div class="panel-body">
       <!-- Current Balance -->
       <div class="balance">
-        <h2>Your Current Balance</h2>
-        <p>$5,000.00</p>
+        <h1>Your Current Balance</h1>
+        <div class="wallet-balance">
+        <select class="from-currency" name="from-currency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <!-- Add more currency options here -->
+        </select>
+
+        <h1 class="bal-amount">$5,000.00</h1></div>
       </div>
 
       <!-- Buttons -->
       <div class="buttons">
-        <button class="add-money">Add Money</button>
-        <button class="withdraw-money">Withdraw Money</button>
-        <button class="transfer-money">Transfer Money</button>
+        <button class="circle-button">+</button>
+        <button class="circle-button">-</button>
+        <button class="circle-button">-></button>
       </div>
     </div>
   </div>
 
   <!-- Currency Exchange Section -->
   <div class="currency-exchange">
-    <h2>Currency Exchange</h2>
-    <label for="from-currency">From Currency:</label>
-    <select id="from-currency" name="from-currency">
+    <div class="panel-heading">
+      <h1 class="panel-title">Convert</h1>
+    </div>
+    <div class="input-amount">
+    <label>From Currency:</label>
+    <select class="from-currency" name="from-currency">
       <option value="USD">USD</option>
       <option value="EUR">EUR</option>
       <option value="GBP">GBP</option>
       <!-- Add more currency options here -->
     </select>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" step="0.01">
+  </div>
 
+      <div class="receiving-amount">
     <label for="to-currency">To Currency:</label>
     <select id="to-currency" name="to-currency">
       <option value="EUR">EUR</option>
@@ -44,12 +68,11 @@
       <option value="GBP">GBP</option>
       <!-- Add more currency options here -->
     </select>
-
-    <label for="amount">Amount:</label>
-    <input type="number" id="amount" name="amount" placeholder="Enter amount" step="0.01">
+    <input type="number" id="receive" name="receive" placeholder="Receiving" step="0.01">
+      </div>
 
     <button type="submit">Convert</button>
-  </div>
-</div>
+      </div>
+    </div>
 </body>
 </html>

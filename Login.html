@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="Styles.css">
+
   <title>Login Form</title>
 </head>
 <body>
-<div class="container">
+
+<div class="banner">
+  <h1>CurrencyHub</h1>
+</div>
+<div class="reg-container">
   <div class="panel">
     <div class="panel-heading">
       <h3 class="panel-title">Login to CurrencyHub</h3>
@@ -18,13 +23,15 @@
         <div class="form-group">
           <input type="password" name="password" id="password" class="password" placeholder="Password">
         </div>
-        <input type="submit" value="Login" class="login">
+        <input type="submit" id="Login" value="Login" class="login">
+        <input type="submit" id="Register" value="Register" class="login">
         <!-- Add the registration link here -->
-        <p class="reg-link">Don't have an account? <a href="Registration.html">Register</a></p>
+
       </form>
     </div>
   </div>
 </div>
+<script src="functions.js"></script>
 </body>
 </html>
 

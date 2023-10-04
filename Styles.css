@@ -10,34 +10,34 @@ body {
     background-color: #f2f2f2;
     color: #333;
     font-family: Arial, sans-serif;
-
-     background-image: url('Images/website-background.jfif');
-        /* Other background properties like size and position */
-        background-size: cover;
-        background-attachment: fixed; /* Optional, for a fixed background */
+    background-color: #6b7a8f; /* Blue-gray background color */
 }
 
 /* Center the form */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
+}
+
+.reg-container{
+       display: flex;
+       justify-content: center;
 }
 
 /* Style the form panel */
 .panel, .currency-exchange {
-    background-color: #7A5E46;
+    background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    width: 35%;
+
     padding: 20px;
+    margin: 5%;
 }
 
 /* Style the panel title */
 .panel-heading {
-    background-color: #5E7C36;
+    background-color: #007BFF;
     color: #eff6ee;
     text-align: center;
     padding: 10px;
@@ -62,14 +62,23 @@ body {
 }
 
 /* Style the submit button */
-.register, .login{
-    background-color: #B7410E;
+.register, .login, .UpdateAccount{
+    background-color: #007BFF;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+}
+.CloseAccount{
+    background-color: red;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
 }
 
 /* Style small text */
@@ -95,4 +104,92 @@ body {
 /* Change link color on hover */
 .reg-link a:hover {
     color: orange;
+}
+
+
+ .banner {
+             position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+            background-color: #007BFF; /* Background color */
+            color: #fff; /* Text color */
+            text-align: center;
+            padding: 10px; /* Padding around text */
+        }
+
+ .wallet-balance{
+    display: flex;
+     /* Center horizontally */
+    align-items: center; /* Center vertically */
+ }
+
+ .from-currency{padding:5px;}
+ .bal-amount{padding:15px;}
+
+ .buttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .circle-button{
+        width: 50px; /* Adjust the width and height as needed */
+        height: 50px;
+        border-radius: 50%; /* Create a circle */
+        background-color: #007BFF; /* Button background color */
+        color: #fff; /* Text color */
+        text-align: center;
+        line-height: 50px; /* Vertically center text */
+        cursor: pointer; /* Add a pointer cursor on hover */
+        border: none; /* Remove button border if needed */
+        outline: none; /* Remove button outline if needed */
+         font-size: 18px; /* Adjust the font size as needed */
+          font-weight: bold; /* Adjust the font weight (e.g., normal, bold, 600, 700) */
+ }
+
+
+ .input-amount,
+ .receiving-amount {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start; /* Align items to the left */
+     margin-bottom: 10px; /* Add space between divs */
+ }
+
+ #receive, #amount {
+     width: 100%; /* Make the input box fill its container */
+     background-color: #0f0f0; /* Add a background color for read-only appearance */
+     border: 1px solid #ccc; /* Add a border for a box-like appearance */
+     padding: 5px; /* Add padding for spacing */
+     font-weight: bold; /* Optionally make the text bold */
+ }
+
+ /* Additional styling for labels, select, and input if needed */
+ label,
+ select,
+ input {
+     margin-bottom: 5px; /* Add space between elements */
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Center vertically */
+    background-color: #6b7a8f; /* Blue-gray background color */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Style individual navigation items */
+nav a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underlines */
+    margin: 0 10px; /* Add horizontal margin between items */
+    font-weight: bold; /* Optionally make the text bold */
+    font-size: 16px; /* Optionally set the font size */
+}
+
+/* Style for hover effect */
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
