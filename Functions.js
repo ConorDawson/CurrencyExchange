@@ -1,7 +1,8 @@
 // Get a reference to the login button and the input fields
 const loginButton = document.getElementById("Login");
 const regButton = document.getElementById("Register");
-const AddMoney = document.getElementById("Add");
+document.getElementById("Add").addEventListener("click", addMoney);
+
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
@@ -29,7 +30,12 @@ regButton.addEventListener("click", function (event) {
 
 
 // Add a click event listener to the button
-AddMoney.addEventListener("click", function() {
-    // Redirect to AddMoney.html
-    window.location.href = "AddMoney.html";
-});
+function addMoney() {
+    // You can add your custom code here
+    window.location.href = "AddMoney.html"; // Redirect to AddMoney.html
+}
+function withDraw() {
+    // You can add your custom code here
+    window.location.href = "AddMoney.html"; // Redirect to AddMoney.html
+}
+
