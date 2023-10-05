@@ -28,9 +28,8 @@ regButton.addEventListener("click", function (event) {
 });
 
 
-AddMoney.addEventListener("click", function (event) {
-    // Prevent the default form submission
-    event.preventDefault();
+// Add a click event listener to the button
+AddMoney.addEventListener("click", function() {
+    // Redirect to AddMoney.html
     window.location.href = "AddMoney.html";
-
 });
