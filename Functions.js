@@ -1,6 +1,7 @@
 // Get a reference to the login button and the input fields
 const loginButton = document.getElementById("Login");
 const regButton = document.getElementById("Register");
+const AddMoney = document.getElementById("Add");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
@@ -23,5 +24,13 @@ regButton.addEventListener("click", function (event) {
     // Prevent the default form submission
     event.preventDefault();
         window.location.href = "Registration.html";
+
+});
+
+
+AddMoney.addEventListener("click", function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+    window.location.href = "AddMoney.html";
 
 });

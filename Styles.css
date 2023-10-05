@@ -47,6 +47,8 @@ body {
 
 /* Style the form elements */
 .form-group {
+    display: flex;
+
     margin-bottom: 15px;
 }
 
